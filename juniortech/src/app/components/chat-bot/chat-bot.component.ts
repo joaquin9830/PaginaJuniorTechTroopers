@@ -6,7 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './chat-bot.component.css'
 })
 export class ChatBotComponent {
+  
+
   ngOnInit(): void {
+    // Cargar el script del chatbot solo si el contenedor está presente
     const script = document.createElement('script');
     script.src = "https://unpkg.com/react-stackai@latest/dist/vanilla/vanilla-stackai.js";
     script.setAttribute('data-project-url', 'https://www.stack-ai.com/embed/456ae3ba-4104-4411-a603-d41bf5085d9b/25c81c74-416f-46f5-800e-11d86cecd895/6684d03d7fdb71b8e45c0cc2');
