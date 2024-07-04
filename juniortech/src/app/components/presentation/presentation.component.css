@@ -57,6 +57,10 @@
     transition: transform 0.3s;
   }
   
+  .pillar:hover {
+    transform: scale(1.05); /* Aumentar la escala en un 5% */
+  }
+
   .pillar:hover i {
     color:#1b8d1b;
     transform: scale(1.3);
