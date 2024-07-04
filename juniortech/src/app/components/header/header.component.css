@@ -11,43 +11,8 @@ header {
   }
   
   
-  /*Banner*/
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-
-  #Banner {
-    position: relative;
-    height: 100vh;
-    min-height: 450px;
-    max-height: 1080px;
-    background: url('../../../assets/images/banner/Banner.jpg') no-repeat center center;
-    background-size: cover;
-    padding: 15px;
-    padding-top: 90px;
-    overflow: hidden;
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: aliceblue;
-  }
   
-  .banner-content {
-    color: #fff;
-  }
   
-  .animate-text {
-    font-size: 3em;
-    animation: fadeIn 2s ease-in-out;
-    margin-bottom: 20px;
-  }
+ 
   
  
