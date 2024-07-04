@@ -72,7 +72,7 @@
   }
   
   .social-icons a {
-    color: #ffffff; /* Cambia este color según tu preferencia */
+    color: #ffffff; 
     margin: 0 5px;
     font-size: 1.9rem;
     text-decoration: none;
@@ -80,7 +80,7 @@
   }
   
   .social-icons a:hover {
-    color: #121312; /* Cambia este color al que desees para el hover */
+    color: #121312; 
   }
   
   .card:hover .social-icons {

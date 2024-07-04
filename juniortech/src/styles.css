@@ -6,11 +6,11 @@
   body {
     background: #63a2d3;
     background: -webkit-linear-gradient(to right, #000000, #bdc3c7);
-    background: linear-gradient(to right, #010f06, #657a71);
+    background: linear-gradient(to right, #010f06, #657a71);    
     color: rgb(173, 180, 179);
     margin: auto;
     max-width: 100%;
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
-    /*cursor: url('img/Cursor/sable.png'), auto;*/
+    cursor: url('../src/assets/iconos/cursor/sable.png'), auto;
   }
