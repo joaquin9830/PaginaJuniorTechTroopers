@@ -9,6 +9,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { HomeComponent } from './components/home/home.component';
 import { ChatBotComponent } from './components/chat-bot/chat-bot.component';
 import { PresentationComponent } from './components/presentation/presentation.component';
+import { SkillsComponent } from './components/skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PresentationComponent } from './components/presentation/presentation.co
     CarouselComponent,
     HomeComponent,
     ChatBotComponent,
-    PresentationComponent
+    PresentationComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
