@@ -1,9 +1,20 @@
 <router-outlet></router-outlet>
 <button id="audio-button" (click)="toggleAudio()">
-    <i class="fa" [ngClass]="isPlaying ? 'bi-pause-circle' : 'bi-play-circle'"></i>
-    
-  </button>
-  <audio #audioPlayer>
-    <source src="../assets/audio/Kid Francescoli - _Moon_ (Official Video).mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
+  <i class="fa" [ngClass]="isPlaying ? 'bi-pause-circle' : 'bi-play-circle'"></i>
+
+</button>
+<audio #audioPlayer>
+  <source src="../assets/audio/Kid Francescoli - _Moon_ (Official Video).mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<!-- Botón fijo con imagen -->
+<div class="chat-icon-container">
+  <a href="https://www.stack-ai.com/chat-assistant/456ae3ba-4104-4411-a603-d41bf5085d9b/25c81c74-416f-46f5-800e-11d86cecd895/6684d03d7fdb71b8e45c0cc2" target="_blank">
+    <!-- Ajusta la URL según sea necesario -->
+    <img src="../assets/images/chatbot/alcon-icon-chat.png" alt="Chat Icon" class="chat-icon">
+  </a>
+  <div class="chat-bubble">
+    Tenemos un largo viaje por delante, <br> ¿te apetece charlar?
+  </div>
+</div>

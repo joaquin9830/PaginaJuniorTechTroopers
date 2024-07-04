@@ -1,4 +1,5 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,15 @@ export class AppComponent {
   @ViewChild('audioPlayer') audioPlayer!: ElementRef<HTMLAudioElement>;
   isPlaying = false;
 
+  constructor(private router:Router){}
+  
+  ngOnInit(){
+    
+  }
+  chatbot(){
+    this.router.navigate(['/chatbot']);
+  }
+
   toggleAudio() {
     if (this.isPlaying) {
       this.audioPlayer.nativeElement.pause();
@@ -18,5 +28,5 @@ export class AppComponent {
     }
     this.isPlaying = !this.isPlaying;
   }
-  
+ 
 }
