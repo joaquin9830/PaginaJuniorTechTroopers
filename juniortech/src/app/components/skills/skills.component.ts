@@ -19,20 +19,29 @@ export class SkillsComponent {
     {
       name: 'Backend',
       items: [
-        { name: 'Node.js', image: 'path/to/nodejs.png', levelIcons: ['bi bi-star-fill', 'bi bi-star-fill', 'bi bi-star'] },
-        { name: 'Python', image: 'path/to/python.png', levelIcons: ['bi bi-star-fill', 'bi bi-star-fill', 'bi bi-star'] },
-        { name: 'Java', image: 'path/to/java.png', levelIcons: ['bi bi-star-fill', 'bi bi-star-fill', 'bi bi-star'] },
-        { name: 'PHP', image: 'path/to/php.png', levelIcons: ['bi bi-star-fill', 'bi bi-star-fill', 'bi bi-star'] }
+        { name: 'Node.js', image: 'assets/images/skills/node-js.png', levelIcons: ['bi bi-star-fill', 'bi bi-star-fill', 'bi bi-star'] },
+        { name: 'Python', image: 'assets/images/skills/python.png', levelIcons: ['bi bi-star-fill', 'bi bi-star-fill', 'bi bi-star'] },
+        { name: 'Java', image: 'assets/images/skills/java.png', levelIcons: ['bi bi-star-fill', 'bi bi-star-fill', 'bi bi-star'] },
+        
       ]
     },
     {
       name: 'DB',
       items: [
-        { name: 'MySQL', image: 'path/to/mysql.png', levelIcons: ['bi bi-star-fill', 'bi bi-star-fill', 'bi bi-star-fill'] },
-        { name: 'MongoDB', image: 'path/to/mongodb.png', levelIcons: ['bi bi-star-fill', 'bi bi-star-fill'] },
-        { name: 'PostgreSQL', image: 'path/to/postgresql.png', levelIcons: ['bi bi-star-fill', 'bi bi-star-fill', 'bi bi-star'] },
-        { name: 'SQLite', image: 'path/to/sqlite.png', levelIcons: ['bi bi-star-fill', 'bi bi-star-fill', 'bi bi-star'] }
+        { name: 'MySQL', image: 'assets/images/skills/mysql.png', levelIcons: ['bi bi-star-fill', 'bi bi-star-fill', 'bi bi-star-fill'] },
+        { name: 'MongoDB', image: 'assets/images/skills/mongo-db.png', levelIcons: ['bi bi-star-fill', 'bi bi-star-fill'] },
+        { name: 'PostgreSQL', image: 'assets/images/skills/postgres.png', levelIcons: ['bi bi-star-fill', 'bi bi-star-fill', 'bi bi-star'] },
+        
       ]
-    }
+    },
+    {
+      name: 'Tools',
+      items: [
+        { name: 'GIT', image: 'assets/images/skills/git.png', levelIcons: ['bi bi-star-fill', 'bi bi-star-fill', 'bi bi-star-fill'] },
+        { name: 'GitHub', image: 'assets/images/skills/github.png', levelIcons: ['bi bi-star-fill', 'bi bi-star-fill'] },
+        
+        
+      ]
+    },
   ];
 }

@@ -16,6 +16,7 @@
     background-color: #000; /* Fondo negro */
     color: #fff; /* Texto blanco */
     transition: transform 0.3s ease-in-out; /* Animación de agrandamiento */
+    
   }
   .skill-box:hover {
     transform: scale(1.1); /* Agrandar al hacer hover */
