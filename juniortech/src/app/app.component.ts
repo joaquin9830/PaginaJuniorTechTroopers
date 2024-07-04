@@ -8,18 +8,11 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'juniortech';
+  //Variable para reproducir el audio
   @ViewChild('audioPlayer') audioPlayer!: ElementRef<HTMLAudioElement>;
   isPlaying = false;
-
-  constructor(private router:Router){}
-  
-  ngOnInit(){
-    
-  }
-  chatbot(){
-    this.router.navigate(['/chatbot']);
-  }
-
+ 
+  //Función para reproducir o pausar el audio
   toggleAudio() {
     if (this.isPlaying) {
       this.audioPlayer.nativeElement.pause();

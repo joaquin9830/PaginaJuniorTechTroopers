@@ -8,6 +8,7 @@ import { AboutComponent } from './components/about/about.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { HomeComponent } from './components/home/home.component';
 import { ChatBotComponent } from './components/chat-bot/chat-bot.component';
+import { PresentationComponent } from './components/presentation/presentation.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ChatBotComponent } from './components/chat-bot/chat-bot.component';
     AboutComponent,
     CarouselComponent,
     HomeComponent,
-    ChatBotComponent
+    ChatBotComponent,
+    PresentationComponent
   ],
   imports: [
     BrowserModule,
