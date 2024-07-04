@@ -24,6 +24,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
     border-radius: 5px;
+    animation: fadeIn 2s ease-in-out;
   }
 
 
@@ -44,4 +45,27 @@
     margin-bottom: 5px;
   }
 
+  /* Estilo para la carta animada */
+.animated-card {
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    cursor: pointer;
+    width: 20%; /* Ajusta el ancho del GIF al 100% del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto */
+    max-width: 20%; /* Limita el ancho máximo del GIF al 100% del contenedor */
+    color:black;
+  }
+  
+  .animated-card img {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .animated-card:hover img {
+    transform: scale(1.1);
+  }
+
+/* Ajuste del cuerpo de la carta */
+.animated-card .card-body {
+    padding: 10px;
+  }
  
