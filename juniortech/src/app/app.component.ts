@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'juniortech';
+  @ViewChild('audioPlayer') audioPlayer!: ElementRef<HTMLAudioElement>;
+  isPlaying = false;
+
+  toggleAudio() {
+    if (this.isPlaying) {
+      this.audioPlayer.nativeElement.pause();
+    } else {
+      this.audioPlayer.nativeElement.play();
+    }
+    this.isPlaying = !this.isPlaying;
+  }
   
 }
