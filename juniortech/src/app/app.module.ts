@@ -11,6 +11,7 @@ import { ChatBotComponent } from './components/chat-bot/chat-bot.component';
 import { PresentationComponent } from './components/presentation/presentation.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ProjectsComponent } from './components/projects/projects.component';
     ChatBotComponent,
     PresentationComponent,
     SkillsComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
