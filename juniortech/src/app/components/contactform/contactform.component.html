@@ -1,32 +1,29 @@
 <section class="contact-form-section" id="Contacto">
-    <div class="form-container">
-      <h2>Formulario de contacto</h2>
-      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-        <fieldset>
-          <legend>Información Personal</legend>
-          <label for="name">Nombre:</label>
-          <input id="name" formControlName="name" type="text" placeholder="Escribe tu nombre" required>
-          <br><br>
-          <label for="email">E-mail:</label>
-          <input id="email" formControlName="email" type="email" placeholder="Escribe tu e-mail" required>
-          <br><br>         
-          
-          <label for="contactNumber">Número de contacto:</label>
-          <input id="contactNumber" formControlName="contactNumber" type="tel" placeholder="Número de contacto" required pattern="[0-9]{10}">      
-          <br><br> 
-          <div>
-            <label for="why">Por qué quieres contactar?:</label>
-            <select name="why" id="why" formControlName="why" required>
-              <option value="1">Trabajo</option>
-              <option value="2">Duda</option>
-              <option value="3">Info</option>
-            </select>
-          </div>             
-          <p>Por favor, asegúrate de que todos los campos estén completos antes de enviar el formulario.</p>
-          <input type="submit" value="Enviar Formulario">
-        </fieldset>
-        
-      </form>
-    </div>
-  </section>
-  
+  <div class="form-container">
+    <h2>Formulario de contacto</h2>
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      <fieldset>
+        <legend>Información Personal</legend>
+        <label for="name">Nombre:</label>
+        <input id="name" formControlName="name" type="text" placeholder="Escribe tu nombre" required>
+        <br><br>
+        <label for="email">E-mail:</label>
+        <input id="email" formControlName="email" type="email" placeholder="Escribe tu e-mail" required>
+        <br><br>         
+        <label for="contactNumber">Número de contacto:</label>
+        <input id="contactNumber" formControlName="contactNumber" type="tel" placeholder="Número de contacto" required pattern="[0-9]{10}">
+        <br><br> 
+        <div>
+          <label for="why">Por qué quieres contactar?:</label>
+          <select name="why" id="why" formControlName="why" required>
+            <option value="1">Trabajo</option>
+            <option value="2">Duda</option>
+            <option value="3">Info</option>
+          </select>
+        </div>             
+        <p>Por favor, asegúrate de que todos los campos estén completos antes de enviar el formulario.</p>
+        <input type="submit" value="Enviar Formulario">
+      </fieldset>
+    </form>
+  </div>
+</section>
