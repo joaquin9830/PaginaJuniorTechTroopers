@@ -1,7 +1,7 @@
 <router-outlet></router-outlet>
 <button id="audio-button" (click)="toggleAudio()">
-    <i class="fa" [ngClass]="isPlaying ? 'fa-pause' : 'fa-play'"></i>
-    <span>{{ isPlaying ? 'Pause' : 'Play' }}</span>
+    <i class="fa" [ngClass]="isPlaying ? 'bi-pause-circle' : 'bi-play-circle'"></i>
+    
   </button>
   <audio #audioPlayer>
     <source src="../assets/audio/Kid Francescoli - _Moon_ (Official Video).mp3" type="audio/mpeg">
