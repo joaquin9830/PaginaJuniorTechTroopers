@@ -13,6 +13,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ContactformComponent } from './components/contactform/contactform.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ContactformComponent } from './components/contactform/contactform.compo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideClientHydration()
