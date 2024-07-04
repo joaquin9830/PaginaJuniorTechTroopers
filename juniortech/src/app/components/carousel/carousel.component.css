@@ -50,9 +50,9 @@
     transition: transform 0.3s ease-in-out;
     overflow: hidden;
     cursor: pointer;
-    width: 20%; /* Ajusta el ancho del GIF al 100% del contenedor */
+    /*width: 100%; /* Ajusta el ancho del GIF al 100% del contenedor */
     height: auto; /* Mantiene la proporción de aspecto */
-    max-width: 20%; /* Limita el ancho máximo del GIF al 100% del contenedor */
+    /*max-width:20%; /* Limita el ancho máximo del GIF al 100% del contenedor */
     color:black;
   }
   
