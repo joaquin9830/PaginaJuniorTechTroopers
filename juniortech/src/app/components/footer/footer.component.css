@@ -1,0 +1,27 @@
+/*footer*/
+#footer {
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  
+  }
+  
+  #footer p {
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  .footer-icons a {
+    color: #ffffff; /* Cambia este color según tu preferencia */
+    margin: 0 5px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-icons a:hover {
+    color: #1b8d1b; /* Cambia este color al que desees para el hover */
+  }
+  
