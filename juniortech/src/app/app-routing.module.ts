@@ -1,7 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ChatBotComponent } from './components/chat-bot/chat-bot.component';
+import { HomeComponent } from './components/home/home.component';
 
-const routes: Routes = [];
+
+// Importamos los componentes que vamos a utilizar
+const routes: Routes = [
+  {path:'', component:HomeComponent},
+  { path: 'chatbot', component: ChatBotComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

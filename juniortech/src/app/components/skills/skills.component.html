@@ -1,0 +1,18 @@
+<section id="Habilidades">
+<div class="skills-section">
+    <div class="category" *ngFor="let category of skills">
+      <h2 class="category-title">{{ category.name }}</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-3" *ngFor="let skill of category.items">
+          <div class="skill-box">
+            <img [src]="skill.image" alt="{{ skill.name }}" class="skill-image">
+            <div class="skill-level">
+              <i *ngFor="let icon of skill.levelIcons" class="{{ icon }}"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  

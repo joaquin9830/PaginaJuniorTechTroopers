@@ -1,0 +1,67 @@
+/*About us Sección*/
+.about-us-section {
+    text-align: center;
+    padding: 40px 20px;
+    color: #fdf8f8;
+  }
+  
+  .about-us-section h2 {
+    color: #fff3f3;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  
+  .about-us-section p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .pillars-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .pillar {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+    flex: 1 1 250px;
+    margin: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .pillar h3 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  
+  .pillar p {
+    color: #666;
+    font-size: 16px;
+  }
+  
+  .pillar i {
+    color:black;
+    font-size: 40px;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .pillar:hover {
+    transform: scale(1.05); /* Aumentar la escala en un 5% */
+  }
+
+  .pillar:hover i {
+    color:#1b8d1b;
+    transform: scale(1.3);
+  }
