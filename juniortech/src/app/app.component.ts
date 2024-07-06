@@ -1,5 +1,6 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -20,6 +21,12 @@ export class AppComponent {
       this.audioPlayer.nativeElement.play();
     }
     this.isPlaying = !this.isPlaying;
+  }
+  
+  //Función de inicialización de la librería AOS
+  ngOnInit() {
+    AOS.init();
+    window.addEventListener('load', AOS.refresh);
   }
  
 }

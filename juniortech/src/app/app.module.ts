@@ -14,6 +14,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ContactformComponent } from './components/contactform/contactform.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { LoadingScreenComponent } from './components/loading-screen/loading-screen.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     SkillsComponent,
     ProjectsComponent,
     FooterComponent,
-    ContactformComponent
+    ContactformComponent,
+    LoadingScreenComponent
   ],
   imports: [
     BrowserModule,

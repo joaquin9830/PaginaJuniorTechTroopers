@@ -1,71 +1,122 @@
 /* Ajustar la altura de las imágenes del carrusel */
 .carousel-image {
-    height: 800px;
-    object-fit: cover;
-  }
-  
-  /* Centrar el título en el medio de cada slide */
-  .carousel-caption {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-  }
-  
-  /*Estilos del Titulo*/
-  .carousel-title {
-    font-size: 2em;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 5px;
-    animation: fadeIn 2s ease-in-out;
-  }
+  height: 800px;
+  object-fit: cover;
+}
 
 
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+
+/* Centrar el título en el medio de cada slide */
+.carousel-caption {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+/* Estilos del Titulo */
+.carousel-title {
+  font-size: 2em;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-
-  
-
-  .animate-text {
-    font-size: 3em;
-    animation: fadeIn 2s ease-in-out;
-    margin-bottom: 5px;
+  to {
+    opacity: 1;
   }
+}
 
-  /* Estilo para la carta animada */
+.animate-text {
+  font-size: 3em;
+  animation: fadeIn 2s ease-in-out;
+  margin-bottom: 5px;
+}
+
+/* Estilo para la carta animada */
 .animated-card {
-    transition: transform 0.3s ease-in-out;
-    overflow: hidden;
-    cursor: pointer;
-    /*width: 100%; /* Ajusta el ancho del GIF al 100% del contenedor */
-    height: auto; /* Mantiene la proporción de aspecto */
-    /*max-width:20%; /* Limita el ancho máximo del GIF al 100% del contenedor */
-    color:black;
-  }
-  
-  .animated-card img {
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .animated-card:hover img {
-    transform: scale(1.1);
-  }
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+  cursor: pointer;
+  height: auto; /* Mantiene la proporción de aspecto */
+  color: black;
+}
+
+.animated-card img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.animated-card:hover img {
+  transform: scale(1.1);
+}
 
 /* Ajuste del cuerpo de la carta */
 .animated-card .card-body {
+  padding: 10px;
+}
+
+/* Media queries adicionales para pantallas más grandes */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .carousel-image {
+    height: 600px;
+  }
+
+  .animate-text {
+    font-size: 2em;
+  }
+
+  .carousel-title {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 1025px) {
+  .carousel-image {
+    height: 800px;
+  }
+
+  .animate-text {
+    font-size: 3em;
+  }
+
+  .carousel-title {
+    font-size: 2em;
+  }
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+  .carousel-image {
+    height: 400px;
+  }
+
+  .animate-text {
+    font-size: 0.8em;
     padding: 10px;
   }
- 
+
+  .carousel-title {
+    font-size: 0.6em;
+  }
+
+  .carousel-caption .btn {
+    font-size: 0.7em;
+    padding: 5px 10px;
+  }
+
+  .animated-card iframe {
+    width: 100%;
+    height: auto;
+  }
+}
