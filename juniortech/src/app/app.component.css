@@ -23,6 +23,21 @@
     margin-top:4px;
   }
 
+  /* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  #audio-button {
+    bottom: 20px;
+    left: 10px;
+
+    padding: 2px 4px;
+  }
+
+  #audio-button i {
+    font-size: 15px;
+    margin-bottom: 2px;
+  }
+}
+
 
 /*Estilos de botón chat-bot*/
 .chat-icon-container {
@@ -54,4 +69,18 @@
 
 .chat-icon-container:hover .chat-bubble {
   display: block; /* Mostrar la burbuja de texto al pasar el ratón sobre el contenedor */
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .chat-icon {
+    width: 40px; /* Reducir el tamaño de la imagen */
+    height: 40px; /* Reducir el tamaño de la imagen */
+  }
+
+  .chat-bubble {
+    bottom: 50px; /* Ajustar la distancia desde la parte inferior de la imagen */
+    right: 20px; /* Ajustar la distancia desde la parte derecha de la imagen */
+    padding: 8px; /* Reducir el padding de la burbuja */
+  }
 }
