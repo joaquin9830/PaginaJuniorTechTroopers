@@ -4,31 +4,7 @@
   object-fit: cover;
 }
 
-/* Media queries para pantallas pequeñas */
-@media (max-width: 768px) {
-  .carousel-image {
-    height: 400px;
-  }
 
-  .animate-text {
-    font-size: 1.5em;
-    padding: 10px;
-  }
-
-  .carousel-title {
-    font-size: 1.2em;
-  }
-
-  .carousel-caption .btn {
-    font-size: 1em;
-    padding: 10px 20px;
-  }
-
-  .animated-card iframe {
-    width: 100%;
-    height: auto;
-  }
-}
 
 /* Centrar el título en el medio de cada slide */
 .carousel-caption {
@@ -116,5 +92,31 @@
 
   .carousel-title {
     font-size: 2em;
+  }
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+  .carousel-image {
+    height: 400px;
+  }
+
+  .animate-text {
+    font-size: 0.8em;
+    padding: 10px;
+  }
+
+  .carousel-title {
+    font-size: 0.6em;
+  }
+
+  .carousel-caption .btn {
+    font-size: 0.7em;
+    padding: 5px 10px;
+  }
+
+  .animated-card iframe {
+    width: 100%;
+    height: auto;
   }
 }

@@ -15,6 +15,10 @@
     cursor: url('../src/assets/iconos/cursor/sable.png'), auto;
   }
 
+::selection {
+  background-color: #32cd3294; /* Verde */
+  color: #fff; /* Color del texto cuando está seleccionado */
+}
 
 /*Media querys*/
 @keyframes fadeIn {
