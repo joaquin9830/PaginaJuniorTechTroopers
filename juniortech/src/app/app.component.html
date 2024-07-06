@@ -1,6 +1,6 @@
 <router-outlet></router-outlet>
 
-<button id="audio-button" (click)="toggleAudio()">
+<button id="audio-button" (click)="toggleAudio()" data-aos="zoom-in-up">
   <i class="fa" [ngClass]="isPlaying ? 'bi-pause-circle' : 'bi-play-circle'"></i>
 
 </button>
@@ -10,7 +10,7 @@
 </audio>
 
 <!-- Botón fijo con imagen -->
-<div class="chat-icon-container">
+<div class="chat-icon-container" data-aos="zoom-in-up">
   <a href="https://www.stack-ai.com/chat-assistant/5e2826ce-2963-48e3-ab85-2465bbd7b5f5/c733b9ee-ef11-4d38-98a0-e0ce38231fb9/66872c12e45742192d1ef1a3" target="_blank">
     <!-- Ajusta la URL según sea necesario -->
     <img src="../assets/images/chatbot/alcon-icon-chat.png" alt="Chat Icon" class="chat-icon">
