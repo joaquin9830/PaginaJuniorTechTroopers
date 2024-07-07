@@ -7,13 +7,18 @@ import { HomeComponent } from './components/home/home.component';
 
 // Importamos los componentes que vamos a utilizar
 const routes: Routes = [
-  {path:'', component:HomeComponent},
+  {path:'', redirectTo: '/home', pathMatch: 'full'},
+  {path:'home', component:HomeComponent},
   {path: 'chatbot', component: ChatBotComponent },
-  {path:'contact', component:ContactformComponent}
+  {path:'contact', component:ContactformComponent},
+  { path: '**', redirectTo: '/home' }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    scrollPositionRestoration: 'enabled', // Restores the scroll position on navigation
+    anchorScrolling: 'enabled'            // Scrolls to the anchor element if present
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
