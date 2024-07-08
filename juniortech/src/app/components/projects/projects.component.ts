@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-projects',
@@ -6,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './projects.component.css'
 })
 export class ProjectsComponent {
+  constructor(private router: Router) { }
 
+  contacto() {
+    this.router.navigate(['/contact'])
+  }
 }

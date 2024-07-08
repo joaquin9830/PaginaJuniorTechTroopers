@@ -16,6 +16,8 @@ import { ContactformComponent } from './components/contactform/contactform.compo
 import { ReactiveFormsModule } from '@angular/forms';
 import { LoadingScreenComponent } from './components/loading-screen/loading-screen.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,9 +37,11 @@ import { LoadingScreenComponent } from './components/loading-screen/loading-scre
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule
+    
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    
   ],
   bootstrap: [AppComponent]
 })
