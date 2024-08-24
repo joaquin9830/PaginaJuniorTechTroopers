@@ -1,3 +1,4 @@
+/* Estilos generales */
 * {
   margin: 0;
   padding: 0;
@@ -45,22 +46,41 @@
   height: 100%;
   width: 100%;
   padding: 5px;
-  background: rgba(255, 255, 255, 0.1); /* Transparencia */
+  background: rgba(0, 0, 0, 0.212); /* Transparencia */
   border-radius: 15px;
-  transform: translateY(0deg);
   transform-style: preserve-3d;
-  backface-visibility: hidden;
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  backface-visibility: hidden;  
   transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
 
-.card img {
-  height: 100%;
+/* Estilo para la cara delantera */
+.card .front-face {
+  display: flex;
+  flex-direction: column; /* Añadido para alinear el texto debajo de la imagen */
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  height: 100%; /* Asegura que el contenedor ocupe todo el espacio */
   width: 100%;
-  object-fit: cover;
-  border-radius: 10px;
+  text-align: center; /* Centra el texto debajo de la imagen */
 }
 
+.card .front-face img {
+  max-height: 70%; /* Ajusta el tamaño de la imagen */
+  width: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 50%; /* Marco redondo */
+  border: 5px solid #fff; /* Marco blanco */
+  object-fit: cover; /* Asegura que la imagen cubra el área del contenedor */
+  margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+  align-items: center; /* Centra verticalmente */
+  margin-top: 20px;
+}
+
+.card .front-face .name {
+  font-size: 18px; /* Tamaño del texto */
+  color: #ffffff; /* Color del texto */
+}
+
+/* Estilo para la cara trasera */
 .card-wrapper:hover > .front-face {
   transform: rotateY(-180deg);
 }
@@ -141,6 +161,10 @@
 
   .card-wrapper {
     height: 300px;
+  }
+
+  .card .front-face img {
+    max-height: 60%; /* Ajustar el tamaño de la imagen en pantallas más pequeñas */
   }
 
   .card-wrapper .back-face img {
