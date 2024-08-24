@@ -10,37 +10,33 @@ export class SkillsComponent {
     {
       name: 'Frontend',
       items: [
-        { name: 'HTML', image: 'assets/images/skills/html.png', levelIcons: ['bi bi-star-fill', 'bi bi-star-fill', 'bi bi-star-fill', 'bi bi-star'] },
-        { name: 'CSS', image: 'assets/images/skills/css.png', levelIcons: ['bi bi-star-fill', 'bi bi-star-fill', 'bi bi-star-fill', 'bi bi-star'] },
-        { name: 'JavaScript', image: 'assets/images/skills/javascript.png', levelIcons: ['bi bi-star-fill', 'bi bi-star-fill', 'bi bi-star-fill', 'bi bi-star'] },
-        { name: 'Angular', image: 'assets/images/skills/angular.png', levelIcons: ['bi bi-star-fill', 'bi bi-star-fill', 'bi bi-star-fill', 'bi bi-star'] }
+        { name: 'HTML', image: 'assets/images/skills/html.png' },
+        { name: 'CSS', image: 'assets/images/skills/css.png' },
+        { name: 'JavaScript', image: 'assets/images/skills/javascript.png' },
+        { name: 'Angular', image: 'assets/images/skills/angular.png' }
       ]
     },
     {
       name: 'Backend',
       items: [
-        { name: 'Node.js', image: 'assets/images/skills/node-js.png', levelIcons: ['bi bi-star-fill', 'bi bi-star-fill', 'bi bi-star'] },
-        { name: 'Python', image: 'assets/images/skills/python.png', levelIcons: ['bi bi-star-fill', 'bi bi-star-fill', 'bi bi-star'] },
-        { name: 'Java', image: 'assets/images/skills/java.png', levelIcons: ['bi bi-star-fill', 'bi bi-star-fill', 'bi bi-star'] },
-        
+        { name: 'Node.js', image: 'assets/images/skills/node-js.png' },
+        { name: 'Python', image: 'assets/images/skills/python.png' },
+        { name: 'Java', image: 'assets/images/skills/java.png' }
       ]
     },
     {
       name: 'DB',
       items: [
-        { name: 'MySQL', image: 'assets/images/skills/mysql.png', levelIcons: ['bi bi-star-fill', 'bi bi-star-fill', 'bi bi-star-fill'] },
-        { name: 'MongoDB', image: 'assets/images/skills/mongo-db.png', levelIcons: ['bi bi-star-fill', 'bi bi-star-fill'] },
-        { name: 'PostgreSQL', image: 'assets/images/skills/postgres.png', levelIcons: ['bi bi-star-fill', 'bi bi-star-fill', 'bi bi-star'] },
-        
+        { name: 'MySQL', image: 'assets/images/skills/mysql.png' },
+        { name: 'MongoDB', image: 'assets/images/skills/mongo-db.png' },
+        { name: 'PostgreSQL', image: 'assets/images/skills/postgres.png' }
       ]
     },
     {
       name: 'Tools',
       items: [
-        { name: 'GIT', image: 'assets/images/skills/git.png', levelIcons: ['bi bi-star-fill', 'bi bi-star-fill', 'bi bi-star-fill'] },
-        { name: 'GitHub', image: 'assets/images/skills/github.png', levelIcons: ['bi bi-star-fill', 'bi bi-star-fill'] },
-        
-        
+        { name: 'GIT', image: 'assets/images/skills/git.png' },
+        { name: 'GitHub', image: 'assets/images/skills/github.png' }
       ]
     },
   ];

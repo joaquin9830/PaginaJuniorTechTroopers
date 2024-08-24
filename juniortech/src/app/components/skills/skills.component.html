@@ -1,18 +1,58 @@
-<section id="Habilidades" data-aos="zoom-in-up">
-<div class="skills-section">
-    <div class="category" *ngFor="let category of skills">
-      <h2 class="category-title">{{ category.name }}</h2>
-      <div class="row justify-content-center">
-        <div class="col-md-3" *ngFor="let skill of category.items">
-          <div class="skill-box">
-            <img [src]="skill.image" alt="{{ skill.name }}" class="skill-image">
-            <div class="skill-level">
-              <i *ngFor="let icon of skill.levelIcons" class="{{ icon }}"></i>
-            </div>
-          </div>
-        </div>
+<div class="skills-container">
+  <div class="skill-category">
+    <h2>Frontend</h2>
+    <div class="skill-list">
+      <div class="skill-card">
+        <img src="../../../assets/images/skills/angular.png" alt="Angular" class="skill-icon">
+        <h3>Angular</h3>
       </div>
+      <div class="skill-card">
+        <img src="../../../assets/images/skills/javascript.png" alt="JavaScript" class="skill-icon">
+        <h3>JavaScript</h3>
+      </div>      
+      <div class="skill-card">
+        <img src="../../../assets/images/skills/html.png" alt="HTML" class="skill-icon">
+        <h3>HTML</h3>
+      </div>
+      <div class="skill-card">
+        <img src="../../../assets/images/skills/css.png" alt="CSS" class="skill-icon">
+        <h3>CSS</h3>
+      </div>     
+    </div>
+  </div>  
+  <div class="skill-category">
+    <h2>Backend</h2>
+    <div class="skill-list">
+      <div class="skill-card">
+        <img src="../../../assets/images/skills/java.png" alt="Angular" class="skill-icon">
+        <h3>Java</h3>
+      </div>
+      <div class="skill-card">
+        <img src="../../../assets/images/skills/python.png" alt="JavaScript" class="skill-icon">
+        <h3>Python</h3>
+      </div>      
+      <div class="skill-card">
+        <img src="../../../assets/images/skills/node-js.png" alt="HTML" class="skill-icon">
+        <h3>Node.js</h3>
+      </div>
+          
     </div>
   </div>
-</section>
-  
+  <div class="skill-category">
+    <h2>DB</h2>
+    <div class="skill-list">
+      <div class="skill-card">
+        <img src="../../../assets/images/skills/mysql.png" alt="Angular" class="skill-icon">
+        <h3>MySQL</h3>
+      </div>
+      <div class="skill-card">
+        <img src="../../../assets/images/skills/postgres.png" alt="JavaScript" class="skill-icon">
+        <h3>PostgreSQL</h3>
+      </div>      
+      <div class="skill-card">
+        <img src="../../../assets/images/skills/mongo-db.png" alt="HTML" class="skill-icon">
+        <h3>MongoDB</h3>
+      </div>        
+    </div>
+  </div>
+</div>

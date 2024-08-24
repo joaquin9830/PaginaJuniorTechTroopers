@@ -46,7 +46,7 @@
   width: 100%;
   padding: 5px;
   background: rgba(255, 255, 255, 0.1); /* Transparencia */
-  border-radius: 10px;
+  border-radius: 15px;
   transform: translateY(0deg);
   transform-style: preserve-3d;
   backface-visibility: hidden;
