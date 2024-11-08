@@ -1,3 +1,10 @@
+*{
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  font-style: normal;
+}
+
+
 /* Ajustar la altura de las imágenes del carrusel */
 .carousel-image {
   height: 800px;
@@ -17,7 +24,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: white;
+  color: var(--color-highlight);
 }
 
 /* Estilos del Titulo */

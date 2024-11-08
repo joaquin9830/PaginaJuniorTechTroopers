@@ -10,6 +10,10 @@ header {
     position: relative;
   }
   
+.navbar-custom{
+  background-color: var(--color-card);
+  font-weight: medium;
+}
   
   
   
