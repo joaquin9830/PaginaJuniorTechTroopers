@@ -161,7 +161,7 @@ h2{
 
 
 .card-int__button::before {
-  content: 'More for this article'; 
+  content: 'Mostrar detalles'; 
   color: white;
   display: flex;
   align-items: center;
