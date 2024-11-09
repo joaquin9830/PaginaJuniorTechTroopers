@@ -52,6 +52,78 @@ span{
   color: #025702; 
 }
 
+/* Estilos para los botones de acción del carrusel */
+.carousel .btn {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #28a745, #218838);
+  color: #ffffff;
+  text-transform: uppercase;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Efecto de hover para botones de acción */
+.carousel .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+.carousel .btn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+/* Animación de brillo en los botones de acción */
+.carousel .btn::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.4);
+  transform: rotate(45deg);
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+
+.carousel .btn:hover::before {
+  opacity: 1;
+  animation: shine 0.8s linear forwards;
+}
+
+@keyframes shine {
+  from {
+    transform: translateX(-100%) rotate(45deg);
+  }
+  to {
+    transform: translateX(200%) rotate(45deg);
+  }
+}
+
+/* Estilos de indicadores del carrusel */
+.carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  margin: 0 4px;
+}
+
+.carousel-indicators .active {
+  background-color: #28a745;
+  width: 14px;
+  height: 14px;
+}
+
 
 
 

@@ -1,9 +1,11 @@
 <router-outlet></router-outlet>
-
+<div>
 <button id="audio-button" (click)="toggleAudio()" data-aos="zoom-in-up">
-  <i class="fa" [ngClass]="isPlaying ? 'bi-pause-circle' : 'bi-play-circle'"></i>
-
+  <i class="fa" [ngClass]="isPlaying ? 'bi-pause-circle' : 'bi-play-circle'"></i>  
+  <span class="tooltip">Activar/Desactivar Audio</span>
 </button>
+
+</div>
 <audio #audioPlayer>
   <source src="../assets/audio/Kid Francescoli - _Moon_ (Official Video).mp3" type="audio/mpeg">
   Your browser does not support the audio element.
