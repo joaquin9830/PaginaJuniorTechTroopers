@@ -224,7 +224,7 @@ h2{
   display: none;
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.8);
+  
   z-index: 10;
 }
 
@@ -234,7 +234,7 @@ h2{
   position: fixed;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+ 
   z-index: 1000;
   opacity: 0;
   animation: fadeIn 0.3s forwards;
@@ -265,13 +265,13 @@ h2{
   position: fixed;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
-  background: #fff;
+  background: #000000ef;
   padding: 30px;
   border-radius: 12px;
   max-width: 600px;
   width: 90%;
   text-align: center;
-  color: #333;
+  color: #3b7902;
   animation: slideIn 0.3s forwards;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   opacity: 0;
@@ -293,20 +293,20 @@ h2{
 .modal-content h3 {
   font-size: 1.8em;
   margin: 10px 0;
-  color: #333;
+  color: #e6e203;
 }
 
 .modal-content p {
   font-size: 1.1em;
-  color: #555;
+  color: #f8f6f6;
   margin-bottom: 20px;
 }
 
 /* Tecnologías con # */
 .technologies span {
   display: inline-block;
-  background: #f0f0f0;
-  color: #333;
+  background: #5da84a;
+  color: #000000;
   padding: 5px 10px;
   border-radius: 5px;
   margin: 5px;
@@ -317,13 +317,13 @@ h2{
 /* Iconos de redes sociales con efecto hover */
 .modal-icons a {
   margin: 0 10px;
-  font-size: 1.5em;
-  color: #333;
+  font-size: 2em;
+  color: var(--color-accent);
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .modal-icons a:hover {
-  color: #007bff;
+  color: var(--color-highlight);
   transform: scale(1.2);
 }
 
