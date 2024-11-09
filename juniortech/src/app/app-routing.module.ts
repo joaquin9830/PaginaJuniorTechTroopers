@@ -7,11 +7,11 @@ import { HomeComponent } from './components/home/home.component';
 
 // Importamos los componentes que vamos a utilizar
 const routes: Routes = [
-  {path:'', redirectTo: '/home', pathMatch: 'full'},
+  {path:'', component:HomeComponent},
   {path:'home', component:HomeComponent},
   {path: 'chatbot', component: ChatBotComponent },
   {path:'contact', component:ContactformComponent},
-  { path: '**', redirectTo: '/home' }
+  
 ];
 
 @NgModule({
