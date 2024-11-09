@@ -73,3 +73,12 @@
   color: #1b8d1b;
   transform: scale(1.2);
 }
+
+span{
+  color:#9cf001;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(6, 159, 248);
+}
