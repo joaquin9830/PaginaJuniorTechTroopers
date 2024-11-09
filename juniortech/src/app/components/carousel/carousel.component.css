@@ -1,6 +1,6 @@
 *{
   font-family: var(--font-secondary);
-  font-weight: 700;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -35,6 +35,25 @@
   border-radius: 5px;
   animation: fadeIn 2s ease-in-out;
 }
+
+
+span{
+  font-family: var(--font-primary);
+}
+.span-1{
+  color: #e2e608;    
+}
+
+.span-2{
+  color:  #ffff; 
+}
+
+.span-3{
+  color: #025702; 
+}
+
+
+
 
 @keyframes fadeIn {
   from {
@@ -72,6 +91,8 @@
 .animated-card .card-body {
   padding: 10px;
 }
+
+
 
 /* Media queries adicionales para pantallas más grandes */
 @media (min-width: 769px) and (max-width: 1024px) {
