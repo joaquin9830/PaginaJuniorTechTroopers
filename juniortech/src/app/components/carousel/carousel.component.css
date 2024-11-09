@@ -65,7 +65,7 @@ span{
 }
 
 .animate-text {
-  font-size: 3em;
+  font-size: 5em;
   animation: fadeIn 2s ease-in-out;
   margin-bottom: 5px;
 }
