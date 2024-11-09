@@ -2,8 +2,7 @@
 .about-us-section {  
   text-align: center;
   padding: 60px 20px;
-  color: #ffffff;
-  height: 100vh; /* Ajusta la altura a toda la pantalla */
+  color: #ffffff; 
   display: flex;
   flex-direction: column;
   justify-content: center;

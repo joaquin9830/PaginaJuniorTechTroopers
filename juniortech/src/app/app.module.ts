@@ -16,6 +16,7 @@ import { ContactformComponent } from './components/contactform/contactform.compo
 import { ReactiveFormsModule } from '@angular/forms';
 import { LoadingScreenComponent } from './components/loading-screen/loading-screen.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ProjectModalComponent } from './components/project-modal/project-modal.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { HttpClientModule } from '@angular/common/http';
     ProjectsComponent,
     FooterComponent,
     ContactformComponent,
-    LoadingScreenComponent
+    LoadingScreenComponent,
+    ProjectModalComponent
   ],
   imports: [
     BrowserModule,
