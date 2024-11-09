@@ -1,29 +1,28 @@
-<section class="contact-form-section" id="Contacto" data-aos="zoom-in-up">
-  <div class="form-container">
-    <h2>Formulario de contacto</h2>
-    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-      <fieldset>
-        <legend>Información Personal</legend>
-        <label for="name">Nombre:</label>
-        <input id="name" formControlName="name" type="text" placeholder="Escribe tu nombre" required>
-        <br><br>
-        <label for="email">E-mail:</label>
-        <input id="email" formControlName="email" type="email" placeholder="Escribe tu e-mail" required>
-        <br><br>         
-        <label for="contactNumber">Número de contacto:</label>
-        <input id="contactNumber" formControlName="contactNumber" type="tel" placeholder="Número de contacto" required pattern="[0-9]{10}">
-        <br><br> 
-        <div>
-          <label for="why">Por qué quieres contactar?:</label>
-          <select name="why" id="why" formControlName="why" required>
-            <option value="1">Trabajo</option>
-            <option value="2">Duda</option>
-            <option value="3">Info</option>
-          </select>
-        </div>             
-        <p>Por favor, asegúrate de que todos los campos estén completos antes de enviar el formulario.</p>
-        <input type="submit" value="Enviar Formulario">
-      </fieldset>
+<!-- Contact Form -->
+<div class="contact-container">
+  <!-- Mensaje de éxito -->
+  <div *ngIf="showSuccess" class="alert alert-success alert-dismissible fade show" role="alert">
+    <i class="bi bi-check-circle-fill"></i> {{ successMessage }}
+  </div>
+
+  <div class="contact-card">
+    <h2>CONTACTO</h2>
+
+    <form class="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <input type="text" id="nombre" formControlName="name" placeholder="Nombre" required>
+        <input type="text" id="apellido" formControlName="apellido" placeholder="Apellido" required>
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" formControlName="email" placeholder="Email" required>
+      </div>
+      <div class="form-group">
+        <input type="tel" id="telefono" formControlName="telefono" placeholder="Número de teléfono">
+      </div>
+      <div class="form-group">
+        <textarea id="mensaje" formControlName="mensaje" placeholder="Mensaje" rows="5" required></textarea>
+      </div>
+      <button type="submit" [disabled]="contactForm.invalid">Enviar</button>
     </form>
   </div>
-</section>
+</div>

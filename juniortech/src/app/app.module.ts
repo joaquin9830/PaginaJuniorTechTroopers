@@ -15,6 +15,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ContactformComponent } from './components/contactform/contactform.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LoadingScreenComponent } from './components/loading-screen/loading-screen.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { LoadingScreenComponent } from './components/loading-screen/loading-scre
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [
     provideClientHydration()

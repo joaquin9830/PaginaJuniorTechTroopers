@@ -1,6 +1,6 @@
 /* Footer Styling */
 .footer-nav {
-  background-color: #1f1f23;
+  background-color: var(--color-primary);
   padding: 3rem 0;
   color: #fff;
   font-size: 14px;

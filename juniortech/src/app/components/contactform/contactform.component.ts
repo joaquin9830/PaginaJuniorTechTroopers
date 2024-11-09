@@ -1,5 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 
 @Component({
@@ -7,15 +9,18 @@ import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
   templateUrl: './contactform.component.html',
   styleUrl: './contactform.component.css'
 })
-export class ContactformComponent implements OnInit{
+export class ContactformComponent implements OnInit {
   contactForm: FormGroup;
+  successMessage: string = '';
+  showSuccess: boolean = false; // Nueva variable para mostrar el mensaje de éxito
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private http: HttpClient, private router: Router) {
     this.contactForm = this.fb.group({
       name: ['', Validators.required],
+      apellido: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      contactNumber: ['', [Validators.required, Validators.pattern('[0-9]{10}')]],
-      why: ['', Validators.required]
+      telefono: [''], // No obligatorio
+      mensaje: ['', Validators.required]
     });
   }
 
@@ -23,23 +28,25 @@ export class ContactformComponent implements OnInit{
 
   onSubmit(): void {
     if (this.contactForm.valid) {
-      const templateParams = {
-        name: this.contactForm.get('name')?.value,
-        email: this.contactForm.get('email')?.value,
-        contactNumber: this.contactForm.get('contactNumber')?.value,
-        why: this.contactForm.get('why')?.value
-      };
+      const formData = this.contactForm.value;
 
-      emailjs.send('YOUR_SERVICE_ID', 'template_5ucuhgp', templateParams, 'YOUR_USER_ID')
-        .then((response: EmailJSResponseStatus) => {
-          console.log('Email enviado', response.status, response.text);
-          alert('Email enviado con éxito.');
-        }, (error) => {
-          console.error('Error al enviar el email', error);
-          alert('Hubo un error al enviar el email.');
-        });
-    } else {
-      console.log('Formulario no válido');
+      this.http.post('https://formspree.io/f/mgvewapa', formData).subscribe(
+        response => {
+          this.successMessage = 'Mensaje enviado exitosamente';
+          this.showSuccess = true; // Mostrar el mensaje de éxito
+
+          setTimeout(() => {
+            this.showSuccess = false; // Ocultar después de 3 segundos
+            this.successMessage = '';
+            this.router.navigate(['']);
+          }, 3000);
+
+          this.contactForm.reset(); // Reiniciar el formulario
+        },
+        error => {
+          alert('Hubo un error al enviar el mensaje');
+        }
+      );
     }
   }
 }
