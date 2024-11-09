@@ -1,67 +1,76 @@
-/*About us Sección*/
-.about-us-section {
-    text-align: center;
-    padding: 40px 20px;
-    color: #fdf8f8;
-  }
-  
-  .about-us-section h2 {
-    color: #fff3f3;
-    margin-bottom: 20px;
-    font-size: 28px;
-    font-weight: 600;
-  }
-  
-  .about-us-section p {
-    margin-bottom: 40px;
-    font-size: 18px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .pillars-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .pillar {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 250px;
-    flex: 1 1 250px;
-    margin: 10px;
-    transition: transform 0.3s;
-  }
-  
-  .pillar h3 {
-    color: #333;
-    margin-bottom: 10px;
-    font-size: 22px;
-    font-weight: 600;
-  }
-  
-  .pillar p {
-    color: #666;
-    font-size: 16px;
-  }
-  
-  .pillar i {
-    color:black;
-    font-size: 40px;
-    margin-bottom: 10px;
-    transition: transform 0.3s;
-  }
-  
-  .pillar:hover {
-    transform: scale(1.05); /* Aumentar la escala en un 5% */
-  }
+/* About Us Section */
+.about-us-section {  
+  text-align: center;
+  padding: 60px 20px;
+  color: #ffffff;
+  height: 100vh; /* Ajusta la altura a toda la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  .pillar:hover i {
-    color:#1b8d1b;
-    transform: scale(1.3);
-  }
+.about-us-section h2 {
+  color: #e6e203;
+  margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.about-us-section p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+}
+
+.pillars-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.pillar {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  max-width: 280px;
+  flex: 1 1 250px;
+  margin: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.pillar:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.pillar h3 {
+  color: #9cf001;
+  margin-top: 15px;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.pillar p {
+  color: #dcdcdc;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.pillar i {
+  color: #f8f8f8;
+  font-size: 50px;
+  margin-bottom: 15px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.pillar:hover i {
+  color: #1b8d1b;
+  transform: scale(1.2);
+}
