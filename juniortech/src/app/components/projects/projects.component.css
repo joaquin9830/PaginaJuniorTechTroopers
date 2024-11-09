@@ -3,10 +3,13 @@
 }
 
 h2{
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 20px;
   text-align: center;
+  color: #e6e203;
+  margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .projects-grid {
