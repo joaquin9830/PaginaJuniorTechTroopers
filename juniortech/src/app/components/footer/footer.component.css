@@ -33,7 +33,7 @@
 }
 
 .footer-icons a:hover {
-  color: #1b8d1b;
+  color: var(--color-highlight);
 }
 
 /* Responsive alignment */
