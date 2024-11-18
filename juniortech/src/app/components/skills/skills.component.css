@@ -6,13 +6,27 @@
 }
 
 .skill-title{
-  color: #e6e203;
+  color:var(--color-highlight);
+  text-align: center;
   margin-bottom: 30px;
-  font-size: 32px;
+  font-family: var(--font-secondary);
   font-weight: 700;
-  letter-spacing: 1px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-family: var(--font-primary);
+  font-size: 3em;
+}
+
+.skill-category h2{
+  font-size: 3em; /* Tamaño de fuente */
+  color: #fff; /* Color de texto */
+  margin-bottom: 10px; /* Espacio debajo */
+  font-weight: 500; /* Grosor de la fuente */
+  letter-spacing: 1px; /* Espaciado entre letras */
+}
+.skill-card h3 {
+  font-size: 1em; /* Tamaño de fuente */
+  color: #fff; /* Color de texto */
+  margin-bottom: 10px; /* Espacio debajo */
+  font-weight: 600; /* Grosor de la fuente */
+  letter-spacing: 1px; /* Espaciado entre letras */
 }
 
 .skill-category {
@@ -34,7 +48,7 @@
   padding: 10px;
   text-align: center;
   width: 120px; /* Ajusta el tamaño según sea necesario */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 50px rgba(27, 27, 27, 0.856);
   transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease; 
 }
 
