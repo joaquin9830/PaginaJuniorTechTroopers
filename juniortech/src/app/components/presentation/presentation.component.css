@@ -9,16 +9,17 @@
 }
 
 .about-us-section h2 {
-  color: #e6e203;
+  color:var(--color-highlight);
+  text-align: center;
   margin-bottom: 30px;
-  font-size: 32px;
+  font-family: var(--font-secondary);
   font-weight: 700;
-  letter-spacing: 1px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 3em;
+
 }
 
 .about-us-section p {
-  font-size: 18px;
+  font-size: 20px;
   max-width: 800px;
   margin: 0 auto 50px;
   line-height: 1.6;
@@ -32,16 +33,18 @@
 }
 
 .pillar {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.322); /* Fondo semitransparente */
+  backdrop-filter: blur(5px); /* Desenfoque */
   padding: 30px;
   border-radius: 15px;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 15px rgba(255, 255, 255, 0.062);
   max-width: 280px;
   flex: 1 1 250px;
   margin: 10px;
   transition: transform 0.3s, box-shadow 0.3s;
   text-align: center;
 }
+
 
 .pillar:hover {
   transform: translateY(-10px) scale(1.05);
@@ -70,7 +73,7 @@
 }
 
 .pillar:hover i {
-  color: #1b8d1b;
+  color: #c2f705;
   transform: scale(1.2);
 }
 
