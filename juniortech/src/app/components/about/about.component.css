@@ -16,16 +16,18 @@
 }
 
 .conocenos-section h1 {
-  color:#e6e203;
+  color:var(--color-highlight);
   text-align: center;
   margin-bottom: 30px;
-  font-family: var(--font-primary);
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  font-size: 3em;
 }
 
 .card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px; /* Reduce la brecha entre las cards */
+  gap: 3px; /* Reduce la brecha entre las cards */
   width: 100%;
 }
 
@@ -48,22 +50,38 @@
   height: 100%;
   width: 100%;
   padding: 5px;
-  background: rgba(0, 0, 0, 0.212); /* Transparencia */
+  background: rgba(0, 0, 0, 0.089); /* Transparencia */
+  box-shadow: 0 5px 50px rgba(255, 255, 255, 0.048);
   border-radius: 15px;
   transform-style: preserve-3d;
   backface-visibility: hidden;  
   transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  overflow: hidden; /* Asegura que el brillo no se salga de la card */
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0)); /* Brillo más sutil */
+  transition: left 0.5s ease-in-out;
+  z-index: 1;
 }
 
 /* Estilo para la cara delantera */
 .card .front-face {
   display: flex;
-  flex-direction: column; /* Añadido para alinear el texto debajo de la imagen */
-  align-items: center; /* Centra verticalmente */
-  justify-content: center; /* Centra horizontalmente */
-  height: 100%; /* Asegura que el contenedor ocupe todo el espacio */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
   width: 100%;
-  text-align: center; /* Centra el texto debajo de la imagen */
+  text-align: center;
+  position: relative; /* Para que el pseudo-elemento se posicione sobre la card */
+  z-index: 0;
 }
 
 .card .front-face img {
@@ -75,6 +93,9 @@
   margin-bottom: 10px; /* Espacio entre la imagen y el texto */
   align-items: center; /* Centra verticalmente */
   margin-top: 20px;
+}
+.card:hover::after {
+  left: 100%; /* Mueve el brillo de izquierda a derecha */
 }
 
 .card .front-face .name {
@@ -105,7 +126,7 @@
   width: 150px;
   padding: 5px;
   border-radius: 50%;
-  background: linear-gradient(375deg, #1cc7d0, #2ede98);
+  background: linear-gradient(375deg, var(--color-highlight), #2ede98);
 }
 
 .card-wrapper .back-face .info {
@@ -133,19 +154,19 @@
   display: block;
   height: 40px;
   width: 40px;
-  color: #fff;
+  color: #000000;
   text-align: center;
   margin: 0 5px;
   line-height: 38px;
   border: 2px solid transparent;
   border-radius: 50%;
-  background: #28a745; /* Botones verdes */
+  background: var(--color-highlight); /* Botones verdes */
   transition: all 0.5s ease;
 }
 
 .card-wrapper .back-face ul a:hover {
-  color: #28a745;
-  border-color: #28a745;
+  color: var(--color-highlight);
+  border-color: var(--color-highlight);
   background: transparent;
 }
 
