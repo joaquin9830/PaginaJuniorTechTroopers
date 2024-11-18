@@ -30,49 +30,102 @@
 /* Estilos del Titulo */
 .carousel-title {
   font-size: 2em;
-  background-color: rgba(0, 0, 0, 0.5);
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 8px;
   animation: fadeIn 2s ease-in-out;
+  backdrop-filter: blur(2px); /* Aplicar desenfoque */
+  color: floralwhite;
 }
 
+.animate-text{
+  font-family: var(--font-secondary);
+  font-weight:600;
+}
 
-span{
+.animate-text2{
+  color:var(--color-highlight);
+  backdrop-filter: blur(2px); /* Aplicar desenfoque */
+  border-radius: 8px;
+  font-family: var(--font-secondary);
+  font-weight:600;
+}
+.animate-text3{
+  color:var(--color-highlight);
+  backdrop-filter: blur(2px); /* Aplicar desenfoque */
+  border-radius: 8px;
+  font-family: var(--font-secondary);
+  font-weight:600;
+}
+span {
   font-family: var(--font-primary);
-}
-.span-1{
-  color: #e2e608;    
+  backdrop-filter: blur(2px); /* Aplicar desenfoque */
+  border-radius: 8px;
+  font-size: 1.7em;
+  
+  text-shadow: 
+    /* Sombra más cercana - color blanco */
+    1px 1px 0px white,
+    -1px 1px 0px white,
+    1px -1px 0px white,
+    -1px -1px 0px white,
+    0px 1px 0px white,
+    0px -1px 0px white,
+    1px 0px 0px white,
+    -1px 0px 0px white,
+    /* Sombra exterior - color destacado */
+    4px 4px 6px var(--color-highlight),
+    -4px 4px 6px var(--color-highlight),
+    4px -4px 6px var(--color-highlight),
+    -4px -4px 6px var(--color-highlight),
+    0px 4px 6px var(--color-highlight),
+    0px -4px 6px var(--color-highlight),
+    4px 0px 6px var(--color-highlight),
+    -4px 0px 6px var(--color-highlight);
 }
 
-.span-2{
-  color:  #ffff; 
+
+.span-1 {
+  color: #000000; 
+  border-radius: 8px;
 }
 
-.span-3{
-  color: #025702; 
+.span-2 {
+  color:#000000;  
+  border-radius: 8px;
+
+}
+
+.span-3 {
+  color: #020202; 
+  border-radius: 8px;
 }
 
 /* Estilos para los botones de acción del carrusel */
 .carousel .btn {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   padding: 12px 24px;
   border-radius: 30px;
-  background: linear-gradient(135deg, #28a745, #218838);
-  color: #ffffff;
+  backdrop-filter: blur(5px);
+  background: linear-gradient(50deg,#02020252, #59e6082f); /* Fondo transparente con un toque de color */
+  color: #ffffffcc;
   text-transform: uppercase;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra más sutil para mantener la transparencia */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
   overflow: hidden;
+  border: 1px solid var(--color-highlight); /* Borde visible si lo deseas */
 }
+
 
 /* Efecto de hover para botones de acción */
 .carousel .btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 5px var(--color-highlight), 0 0 8px var(--color-highlight);
   background-color: rgba(0, 0, 0, 0.075);
 }
+
+
 
 .carousel .btn:active {
   transform: translateY(0);
@@ -119,7 +172,8 @@ span{
 }
 
 .carousel-indicators .active {
-  background-color: #28a745;
+   
+  color:#e2e608;
   width: 14px;
   height: 14px;
 }
@@ -140,6 +194,7 @@ span{
   font-size: 5em;
   animation: fadeIn 2s ease-in-out;
   margin-bottom: 5px;
+  font-family: var(--font-secondary);
 }
 
 /* Estilo para la carta animada */
